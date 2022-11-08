@@ -1,9 +1,28 @@
-<!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <script type="text/javascript" src="index.js"></script>
+    <title>Grow Your Plant</title>
+  </head>
+  <body>
+    <form id="createPlant">
+      <label for="name">Enter your plant's name:</label>
+      <input id="name" type="text">
+      <label for="trait">Enter your plant's trait:</label>
+      <select id="trait">
+        <option value="thorns">Thorns</option>
+        <option value="vines">Vines</option>
+        <option value="followers">Followers</option>
+      </select>
+      <button type="submit">Create Plant</button>
+    </form>
 
-</head>
-<body>
+    <div id="plants"></div>
 
-</body>
+    <button id="feed">Add soil</button>
+    <button id="hydrate">Add water</button>
+    <button id="show-state">Current Stats</button>
+    <h1>Your Plant's Values</h1>
+    <h3><div id="soil-value">0</div></h3>
+    <h3><div id="water-value">0</div></h3>
+  </body>
 </html>
